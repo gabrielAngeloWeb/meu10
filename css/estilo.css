@@ -13,7 +13,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  font-size: 20px; }
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif; }
 
 .wraper {
   width: 100%;
@@ -111,5 +112,138 @@ nav.menu-principal {
         cursor: pointer;
         transform: scale(1.2);
         transition: 0.3s ease-in; }
+
+main.home {
+  width: 83%;
+  height: 100%;
+  background: linear-gradient(to right, #1a2027, 30.16%, #29323c);
+  padding-right: 8%;
+  padding-left: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  min-width: calc(100% - 8em);
+  padding-bottom: 2%; }
+  main.home header.cabecalho {
+    width: 100%;
+    height: 7em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; }
+    main.home header.cabecalho div.logo {
+      text-indent: -99999em;
+      width: 308.33px;
+      height: 73.33px;
+      background-size: cover;
+      background-image: url("../icones/logo.svg"); }
+    main.home header.cabecalho div.descricao-catalogo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-around;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      color: rgba(255, 255, 255, 0.5); }
+      main.home header.cabecalho div.descricao-catalogo p {
+        text-align: right;
+        font-size: 1.1em; }
+        main.home header.cabecalho div.descricao-catalogo p:first-child {
+          font-weight: bold; }
+        main.home header.cabecalho div.descricao-catalogo p span {
+          font-style: italic; }
+  main.home section.destaques {
+    width: 100%;
+    height: 20em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    background-color: rgba(255, 255, 255, 0.2); }
+    main.home section.destaques article {
+      width: 33.33%;
+      height: 100%;
+      opacity: 0.3; }
+    main.home section.destaques div.imagem-destaque {
+      height: 70%;
+      background-size: cover;
+      background-position: bottom, right; }
+    main.home section.destaques article.voce-decide div.imagem-destaque {
+      background-image: url(../imagens/voce-decide.jpg); }
+    main.home section.destaques article.camisa-dez div.imagem-destaque {
+      background-image: url(../imagens/camisa-dez.jpg); }
+    main.home section.destaques article.para-a-ewave div.imagem-destaque {
+      background-image: url(../imagens/handshake.jpg); }
+    main.home section.destaques div.descricao-destaque {
+      background: linear-gradient(to right, #38beef, 77.25%, #3668b0);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      height: 30%;
+      width: 100%;
+      position: relative; }
+      main.home section.destaques div.descricao-destaque h1 {
+        font-size: 1.8em;
+        color: white;
+        font-weight: normal;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        position: static;
+        opacity: 0.4; }
+      main.home section.destaques div.descricao-destaque p {
+        display: none; }
+    main.home section.destaques article.ativo {
+      opacity: 1;
+      transform: scale(1.15);
+      position: relative;
+      z-index: 1;
+      box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.3);
+      transition: .5s;
+      cursor: pointer; }
+      main.home section.destaques article.ativo div.descricao-destaque {
+        background: linear-gradient(to right, #38beef, 77.25%, #3668b0);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        height: 30%;
+        position: relative; }
+        main.home section.destaques article.ativo div.descricao-destaque h1 {
+          font-size: 1.8em;
+          color: white;
+          font-weight: normal;
+          text-transform: uppercase;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+          padding-left: 4%;
+          position: absolute;
+          top: -40%;
+          opacity: 1; }
+        main.home section.destaques article.ativo div.descricao-destaque p {
+          font-size: .8em;
+          color: white;
+          font-weight: lighter;
+          line-height: 1.5;
+          padding-left: 4%;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+          display: block; }
 
 /*# sourceMappingURL=estilo.css.map */

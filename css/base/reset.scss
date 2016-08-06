@@ -9,6 +9,7 @@
 body {
      @include flexbox(column, center, center);
      font-size: 20px; // Definindo o valor de 1em (20px)
+     font-family: 'Ubuntu', sans-serif;
 }
 
 .wraper {
