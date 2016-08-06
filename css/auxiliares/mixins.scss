@@ -1,0 +1,47 @@
+// Mixin de atalho para altura e largura
+@mixin dimensao($largura, $altura) {
+     width: $largura;
+     height: $altura;
+}
+
+// Mixin de padrão para seções
+@mixin sessao-padrao() {
+     @include dimensao(100%, 1vh);
+}
+
+// Mixin de padding padrão
+@mixin padding-padrao() {
+     padding-right: 5%;
+     padding-left: 5%;
+}
+
+// Mixin do flexbox
+@mixin flexbox($flex-direction-value, $align-items-value, $justify-content-value) {
+     display: flex;
+     flex-direction: $flex-direction-value;
+     align-items: $align-items-value;
+     justify-content: $justify-content-value;
+
+     // Prefixos
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+}
+
+// Mixins de gradientes
+@mixin fundo-gradiente-menu() {
+     background: linear-gradient(to right, #13171d, 20.16%, #12171d);
+}
+
+@mixin fundo-gradiente-azul() {
+     background: linear-gradient(to right, #38beef, 77.25%, #3668b0);
+}
+
+@mixin fundo-home-lista() {
+     background: linear-gradient(to right, #1a2027, 30.16%, #29323c);
+}
+
+// Mixin image-replacement
+@mixin image-replacement() {
+     text-indent: -99999em;
+}

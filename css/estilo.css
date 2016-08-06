@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  font-size: 20px; }
+
+.wraper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  max-width: 1500px;
+  max-height: 1000px; }
+
+li {
+  list-style: none; }
+
+nav.menu-principal {
+  width: 12%;
+  height: 100%;
+  background: linear-gradient(to right, #13171d, 20.16%, #12171d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  min-width: 8em;
+  position: absolute;
+  right: 0; }
+  nav.menu-principal div.menu-acesso {
+    width: 100%;
+    height: 9em;
+    box-sizing: content-box; }
+    nav.menu-principal div.menu-acesso ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex; }
+    nav.menu-principal div.menu-acesso li {
+      width: 3em;
+      height: 3em;
+      text-indent: -99999em;
+      background-size: 85%;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block; }
+      nav.menu-principal div.menu-acesso li:first-child {
+        background-image: url("../icones/home.svg"); }
+      nav.menu-principal div.menu-acesso li:last-child {
+        background-image: url("../icones/list.svg"); }
+      nav.menu-principal div.menu-acesso li:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: 0.3s ease-in; }
+    nav.menu-principal div.menu-acesso:after {
+      background: linear-gradient(to right, #1a2027, 30.16%, #29323c);
+      content: "";
+      display: block;
+      width: 100%;
+      height: .5em;
+      box-shadow: 0em 0.1em 0.3em rgba(0, 0, 0, 0.4); }
+  nav.menu-principal div.menu-times {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    width: 100%;
+    height: 23em;
+    padding-top: 2em; }
+    nav.menu-principal div.menu-times ul {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      flex-wrap: wrap;
+      max-width: 4.75em; }
+    nav.menu-principal div.menu-times li {
+      width: 1.8em;
+      height: 1.8em;
+      text-indent: -99999em;
+      background-size: 85%;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block; }
+      nav.menu-principal div.menu-times li:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: 0.3s ease-in; }
+
+/*# sourceMappingURL=estilo.css.map */

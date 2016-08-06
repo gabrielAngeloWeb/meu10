@@ -1,0 +1,80 @@
+nav.menu-principal {
+     @include dimensao(12%, 100%);
+     @include fundo-gradiente-menu();
+     @include flexbox(column, center, center);
+     min-width: 8em;
+
+     position: absolute;
+     right: 0;
+
+     div.menu-acesso {
+          @include dimensao(100%, 9em);
+          box-sizing: content-box;
+
+          ul {
+               @include dimensao(100%, 100%);
+               @include flexbox(column, center, space-around);
+          }
+
+          li {
+               @include dimensao(3em, 3em);
+               @include image-replacement();
+               background-size: 85%;
+               background-repeat: no-repeat;
+               background-position: center;
+               display: block;
+
+               &:first-child {
+                     background-image: url('../icones/home.svg');
+               }
+
+               &:last-child {
+                     background-image: url('../icones/list.svg');
+               }
+
+               &:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: 0.3s ease-in;
+              }
+          }
+
+          &:after {
+                @include fundo-home-lista();
+
+                content: "";
+                display: block;
+                width: 100%;
+                height: .5em;
+                box-shadow: 0em 0.1em 0.3em rgba(0,0,0,0.4);
+          }
+     }
+
+     div.menu-times {
+          @include flexbox(column, center, center);
+          @include dimensao(100%, 23em);
+          padding-top: 2em;
+
+          ul {
+               @include dimensao(60%, 100%);
+               @include flexbox(row, center, space-between);
+               flex-wrap: wrap;
+               max-width: 4.75em;
+          }
+
+          li {
+              @include dimensao(1.8em, 1.8em);
+              @include image-replacement();
+              background-size: 85%;
+              background-repeat: no-repeat;
+              background-position: center;
+              display: block;
+
+              &:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                    transition: 0.3s ease-in;
+              }
+          }
+     }
+}

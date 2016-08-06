@@ -1,0 +1,23 @@
+* {
+     margin: 0;
+     padding: 0;
+     border: none;
+     outline: none;
+     box-sizing: border-box;
+}
+
+body {
+     @include flexbox(column, center, center);
+     font-size: 20px; // Definindo o valor de 1em (20px)
+}
+
+.wraper {
+     @include dimensao(100%, 100vh);
+     position: relative;
+     max-width: 1500px;
+     max-height: 1000px;
+}
+
+li {
+     list-style: none;
+}
