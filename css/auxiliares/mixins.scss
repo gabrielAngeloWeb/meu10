@@ -45,3 +45,31 @@
 @mixin image-replacement() {
      text-indent: -99999em;
 }
+
+// Mixin para logo secundario
+@mixin logo-secundario() {
+      div.logo-secundario {
+            height: 4.5em;
+            @include flexbox(column, flex-start, space-between);
+
+            h2 {
+                  @include dimensao(185px, 44px);
+                  @include image-replacement();
+                  background-image: url('../icones/logo.svg');
+                  background-size: cover;
+            }
+
+            .subtitulo {
+                  font-size: .8em;
+                  color: rgba(255,255,255,0.2);
+
+                  p:first-child {
+                        font-weight: bold;
+                  }
+
+                  span {
+                        font-style: italic;
+                  }
+            }
+      }
+}

@@ -127,7 +127,8 @@ main.home {
   display: -ms-flexbox;
   display: -webkit-flex;
   min-width: calc(100% - 8em);
-  padding-bottom: 2%; }
+  padding-bottom: 2%;
+  display: none; }
   main.home header.cabecalho {
     width: 100%;
     height: 7em;
@@ -245,5 +246,117 @@ main.home {
           padding-left: 4%;
           text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
           display: block; }
+
+section.lista-camisas-dez {
+  width: 83%;
+  height: 100%;
+  background: linear-gradient(to right, #1a2027, 30.16%, #29323c);
+  padding-right: 8%;
+  padding-left: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  min-width: calc(100% - 8em); }
+  section.lista-camisas-dez header {
+    width: 100%;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; }
+    section.lista-camisas-dez header div.logo-secundario {
+      height: 4.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex; }
+      section.lista-camisas-dez header div.logo-secundario h2 {
+        width: 185px;
+        height: 44px;
+        text-indent: -99999em;
+        background-image: url("../icones/logo.svg");
+        background-size: cover; }
+      section.lista-camisas-dez header div.logo-secundario .subtitulo {
+        font-size: .8em;
+        color: rgba(255, 255, 255, 0.2); }
+        section.lista-camisas-dez header div.logo-secundario .subtitulo p:first-child {
+          font-weight: bold; }
+        section.lista-camisas-dez header div.logo-secundario .subtitulo span {
+          font-style: italic; }
+    section.lista-camisas-dez header h1 {
+      font-size: 3em;
+      font-weight: lighter;
+      text-transform: uppercase;
+      color: #38beef;
+      width: 13ch;
+      text-align: right;
+      line-height: 1; }
+  section.lista-camisas-dez article.grid-jogadores {
+    width: 100%; }
+    section.lista-camisas-dez article.grid-jogadores ul {
+      display: flex;
+      flex-direction: row;
+      align-items: space-between;
+      justify-content: space-between;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      flex-wrap: wrap;
+      width: 100%; }
+    section.lista-camisas-dez article.grid-jogadores li {
+      width: 25%;
+      height: 7em;
+      background-size: cover;
+      opacity: 0.1;
+      cursor: pointer; }
+      section.lista-camisas-dez article.grid-jogadores li p {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        text-align: left;
+        padding: 0.7em 0 0.7em 2.5em; }
+      section.lista-camisas-dez article.grid-jogadores li:hover {
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        transform: scale(1.2);
+        transition: .5s; }
+        section.lista-camisas-dez article.grid-jogadores li:hover p {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: block; }
+        section.lista-camisas-dez article.grid-jogadores li:hover span {
+          display: inline-block;
+          width: 1.5em;
+          height: 1.5em;
+          background-size: cover;
+          position: absolute;
+          bottom: .4em;
+          left: .5em;
+          z-index: 2; }
+    section.lista-camisas-dez article.grid-jogadores p {
+      font-size: .9em;
+      margin-top: .8em;
+      color: #38beef;
+      font-weight: lighter;
+      text-align: right; }
 
 /*# sourceMappingURL=estilo.css.map */

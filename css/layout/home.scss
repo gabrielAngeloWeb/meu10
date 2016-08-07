@@ -5,6 +5,7 @@ main.home {
       @include flexbox(column, center, space-around);
       min-width: calc(100% - 8em);
       padding-bottom: 2%;
+      display: none;
 
       header.cabecalho {
             @include dimensao(100%, 7em);

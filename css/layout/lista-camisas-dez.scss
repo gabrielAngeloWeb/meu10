@@ -1,0 +1,84 @@
+section.lista-camisas-dez {
+      @include dimensao(83%, 100%);
+      @include fundo-home-lista;
+      @include padding-padrao();
+      @include flexbox(column, center, space-around);
+      min-width: calc(100% - 8em);
+
+      header {
+            @include dimensao(100%, 5em);
+            @include flexbox(row, center, space-between);
+            @include logo-secundario();
+
+            h1 {
+                  font-size: 3em;
+                  font-weight: lighter;
+                  text-transform: uppercase;
+                  color: $azul-padrao;
+                  width: 13ch;
+                  text-align: right;
+                  line-height: 1;
+            }
+      }
+
+      article.grid-jogadores {
+            width: 100%;
+
+            ul {
+                  @include flexbox(row, space-between, space-between);
+                  flex-wrap: wrap;
+                  width: 100%;
+            }
+
+            li {
+                  width: 25%;
+                  height: 7em;
+                  background-size: cover;
+                  opacity: 0.1;
+                  cursor: pointer;
+
+                  p {
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        background-color: rgba(0,0,0,0.5);
+                        display: none;
+                        text-align: left;
+                        padding: 0.7em 0 0.7em 2.5em;
+                  }
+
+                  &:hover {
+                        position: relative;
+                        z-index: 1;
+                        opacity: 1;
+                        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+                        transform: scale(1.2);
+                        transition: .5s;
+
+                        p {
+                              @include flexbox(row, center, space-around);
+                              display: block;
+                        }
+
+                        span {
+                              display: inline-block;
+                              width: 1.5em;
+                              height: 1.5em;
+                              background-size: cover;
+                              position: absolute;
+                              bottom: .4em;
+                              left: .5em;
+                              z-index: 2;
+                        }
+                  }
+            }
+
+            p {
+                  font-size: .9em;
+                  margin-top: .8em;
+                  color: $azul-padrao;
+                  font-weight: lighter;
+                  text-align: right;
+            }
+      }
+}

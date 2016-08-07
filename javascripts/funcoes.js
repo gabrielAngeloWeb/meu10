@@ -7,6 +7,16 @@ function incluiIconesTimes() {
      }
 }
 
+function incluiFotosJogadores() {
+      var gridJogadores = document.querySelector('.grid-jogadores');
+      var itensMenuJogadores = gridJogadores.querySelectorAll('li');
+      for(var i = 0; i < 12; i++) {
+            itensMenuJogadores[i].style.backgroundImage = "url(" + jogadores[i].imagemJogador + ")";
+            itensMenuJogadores[i].querySelector('p').textContent = jogadores[i].conhecidoComo;
+            itensMenuJogadores[i].querySelector('span').style.backgroundImage = "url(" + times[i].iconeTime + ")";
+      }
+}
+
 function animaDestaque() {
      // Seleciona os artigos dentro da seção 'destaques'
      var sectionDestaques = document.querySelector('.destaques');
@@ -31,5 +41,6 @@ function animaDestaque() {
      }
 }
 
+incluiFotosJogadores();
 animaDestaque();
 incluiIconesTimes();
