@@ -1,0 +1,90 @@
+section.jogadores {
+      @include dimensao(83%, 100%);
+      @include flexbox(column, center, space-between);
+      min-width: calc(100% - 8em); // 100% - 160px
+
+      header {
+            @include dimensao(100%, 7em); // 140px
+            @include flexbox(row, center, space-between);
+            @include fundo-home-lista();
+            @include padding-padrao();
+            @include logo-secundario();
+
+            div.identificacao-jogador {
+                  @include flexbox(row, center, flex-end);
+                  @include dimensao(30em, 100%); // 600px
+
+                  div.nome-time {
+                        @include flexbox(column, flex-end, center);
+                        height: 100%;
+
+                        h1 {
+                              font-size: 3em; // 60em
+                              font-weight: lighter;
+                              text-transform: uppercase;
+                              color: $azul-padrao;
+                              line-height: 0.9;
+                        }
+
+                        p {
+                              font-size: 1.3em; // 26px
+                              font-weight: lighter;
+                              text-align: right;
+                              color: $azul-padrao;
+                        }
+                  }
+
+                  div.escudo {
+                        @include dimensao(4em, 4em); // 80px 80px
+                        display: block;
+                        background-size: cover;
+                        margin-left: 1em; // 20px
+                  }
+            }
+      }
+
+      article.background-jogador {
+            @include dimensao(100%, calc(100% - 7em)); // 100% - 140px
+            @include flexbox(column, flex-end, center);
+            @include padding-padrao();
+            background-size: cover;
+
+            div.dados-jogador {
+                  @include dimensao(75%, 50%);
+                  @include flexbox(row, center, flex-start);
+                  flex-wrap: wrap;
+                  background-color: rgba(0,0,0,0.8);
+
+                  div {
+                        @include dimensao(33%, 20%);
+                        padding-left: 3%;
+
+                        h3 {
+                              font-size: 1.3em; // 26px
+                              font-weight: normal;
+                              color: $azul-padrao;
+                              text-transform: uppercase;
+                              position: relative;
+
+                              &:after {
+                                    content: '';
+                                    display: block;
+                                    position: absolute;
+                                    width: 2em; // 52px
+                                    height: 0.13em; // 3.38px
+                                    top: 1.2em; // 31.2px
+                                    @include fundo-gradiente-azul();
+                              }
+                        }
+
+                        p {
+                              font-size: 0.8em; // 16px
+                              font-weight: lighter;
+                              color: $azul-padrao;
+                              width: 20ch;
+                              margin-top: 1em; // 16px
+                        }
+                  }
+            }
+      }
+}

@@ -10,15 +10,21 @@ body {
      @include flexbox(column, center, center);
      font-size: 20px; // Definindo o valor de 1em (20px)
      font-family: 'Ubuntu', sans-serif;
+     overflow-y: hidden;
 }
 
 .wraper {
      @include dimensao(100%, 100vh);
      position: relative;
-     max-width: 1500px;
-     max-height: 1000px;
+     max-width: 75em; // 1500px
+     max-height: 50em; // 1000px
+     top: 0vh;
 }
 
 li {
      list-style: none;
+}
+
+h2 {
+      font-size: 1.5em // 30px
 }

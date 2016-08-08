@@ -2,13 +2,13 @@ nav.menu-principal {
      @include dimensao(12%, 100%);
      @include fundo-gradiente-menu();
      @include flexbox(column, center, center);
-     min-width: 8em;
+     min-width: 8em; // 160px
 
-     position: absolute;
+     position: fixed;
      right: 0;
 
      div.menu-acesso {
-          @include dimensao(100%, 9em);
+          @include dimensao(100%, 9em); // 180px
           box-sizing: content-box;
 
           ul {
@@ -17,7 +17,7 @@ nav.menu-principal {
           }
 
           li {
-               @include dimensao(3em, 3em);
+               @include dimensao(3em, 3em); // 60px 60px
                @include image-replacement();
                background-size: 85%;
                background-repeat: no-repeat;
@@ -45,25 +45,25 @@ nav.menu-principal {
                 content: "";
                 display: block;
                 width: 100%;
-                height: .5em;
-                box-shadow: 0em 0.1em 0.3em rgba(0,0,0,0.4);
+                height: 0.5em; // 10px
+                box-shadow: 0em 0.1em 0.3em rgba(0,0,0,0.4); // 0px 2px 6px
           }
      }
 
      div.menu-times {
           @include flexbox(column, center, center);
-          @include dimensao(100%, 23em);
-          padding-top: 2em;
+          @include dimensao(100%, 23em); // 460px
+          padding-top: 2em; // 40px
 
           ul {
                @include dimensao(60%, 100%);
                @include flexbox(row, center, space-between);
                flex-wrap: wrap;
-               max-width: 4.75em;
+               max-width: 4.75em; // 95px
           }
 
           li {
-              @include dimensao(1.8em, 1.8em);
+              @include dimensao(1.8em, 1.8em); // 36px 36px
               @include image-replacement();
               background-size: 85%;
               background-repeat: no-repeat;

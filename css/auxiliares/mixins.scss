@@ -49,18 +49,18 @@
 // Mixin para logo secundario
 @mixin logo-secundario() {
       div.logo-secundario {
-            height: 4.5em;
+            height: 4.5em; // 90px
             @include flexbox(column, flex-start, space-between);
 
             h2 {
-                  @include dimensao(185px, 44px);
+                  @include dimensao(6.16em, 1.46em); // 185px 44px
                   @include image-replacement();
                   background-image: url('../icones/logo.svg');
                   background-size: cover;
             }
 
-            .subtitulo {
-                  font-size: .8em;
+            div.subtitulo {
+                  font-size: 0.8em; // 16px
                   color: rgba(255,255,255,0.2);
 
                   p:first-child {
